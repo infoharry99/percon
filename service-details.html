@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Service Details - FlexBiz Bootstrap Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <style>
+      .services-section {
+        padding: 100px 0;
+        background: linear-gradient(180deg, #f8fafc, #ffffff);
+        font-family: "Inter", sans-serif;
+      }
+
+      /* LAYOUT */
+      .services-container {
+        max-width: 1300px;
+        margin: auto;
+        padding: 0 24px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 70px;
+      }
+
+      /* HEADER */
+      .services-header {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 60px;
+      }
+
+      .services-header h2 {
+        font-size: 34px;
+        font-weight: 600;
+        color: #0f172a;
+      }
+
+      .header-line {
+        flex: 1;
+        height: 2px;
+        background: repeating-linear-gradient(
+          135deg,
+          #e5e7eb,
+          #e5e7eb 6px,
+          transparent 6px,
+          transparent 12px
+        );
+      }
+
+      /* GROUP */
+      .service-group {
+        margin-bottom: 70px;
+      }
+
+      .service-group h3 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #0f172a;
+        margin-bottom: 30px;
+        position: relative;
+      }
+
+      .service-group h3::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, #2563eb, #22c55e);
+        margin-top: 10px;
+        border-radius: 2px;
+      }
+
+      /* SERVICE GRID */
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+
+      /* SERVICE CARD */
+      .service-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 18px;
+        padding: 24px 28px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #1e293b;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+        border: 1px solid #e5e7eb;
+        transition: all 0.35s ease;
+        cursor: pointer;
+      }
+
+      .service-card:hover {
+        transform: translateY(-8px);
+        border-color: #2563eb;
+        color: #2563eb;
+        box-shadow: 0 30px 70px rgba(37, 99, 235, 0.25);
+      }
+
+      /* SIDEBAR */
+      .services-sidebar {
+        position: sticky;
+        top: 100px;
+        padding: 36px 28px;
+        background: #020617;
+        border-radius: 26px;
+        box-shadow: 0 30px 80px rgba(2, 6, 23, 0.6);
+      }
+
+      .services-sidebar h4 {
+        color: #ffffff;
+        font-size: 22px;
+        margin-bottom: 28px;
+        font-weight: 600;
+      }
+
+      /* INDUSTRY ITEMS */
+      .industry-item {
+        padding: 14px 18px;
+        margin-bottom: 14px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.08);
+        color: #e5e7eb;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .industry-item:hover {
+        background: linear-gradient(135deg, #2563eb, #22c55e);
+        transform: translateX(8px);
+        color: #ffffff;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 992px) {
+        .services-container {
+          grid-template-columns: 1fr;
+        }
+
+        .service-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .services-sidebar {
+          position: relative;
+          top: 0;
+          margin-top: 60px;
+        }
+      }
+
+      /* HERO SECTION */
+      .about-hero {
+        position: relative;
+        height: 240px;
+        width: 100%;
+        background-image: url("https://images.unsplash.com/photo-1494526585095-c41746248156");
+        background-size: 110%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        animation: bgZoom 12s ease-in-out infinite alternate;
+      }
+
+      /* BACKGROUND ZOOM */
+      @keyframes bgZoom {
+        0% {
+          background-size: 110%;
+        }
+        100% {
+          background-size: 125%;
+        }
+      }
+
+      /* DARK BLUE OVERLAY */
+      .about-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to right,
+          rgba(2, 6, 23, 0.96),
+          rgba(2, 6, 23, 0.85),
+          rgba(2, 6, 23, 0.96)
+        );
+        z-index: 1;
+      }
+
+      /* MOVING WAVE LIGHT */
+      .about-wave {
+        position: absolute;
+        top: -40%;
+        left: -100%;
+        width: 60%;
+        height: 200%;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          rgba(59, 130, 246, 0.18),
+          transparent
+        );
+        z-index: 2;
+        animation: waveMove 6s linear infinite;
+      }
+
+      @keyframes waveMove {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 160%;
+        }
+      }
+
+      /* CONTENT */
+      .about-content {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+      }
+
+      /* TITLE */
+      .about-content h1 {
+        margin: 0;
+        font-size: 44px;
+        letter-spacing: 3px;
+        font-weight: 700;
+        color: #ffffff;
+        text-transform: uppercase;
+
+        opacity: 0;
+        animation: textReveal 1.4s ease forwards;
+      }
+
+      /* TEXT REVEAL */
+      @keyframes textReveal {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+          text-shadow: none;
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+          text-shadow: 0 0 18px rgba(59, 130, 246, 0.35);
+        }
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .about-hero {
+          height: 180px;
+        }
+
+        .about-content h1 {
+          font-size: 30px;
+          letter-spacing: 2px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="service-details-page">
+    <header id="header" class="header sticky-top">
+      <div class="container-fluid container-xl position-relative">
+        <div class="top-row d-flex align-items-center justify-content-between">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.webp" alt=""> -->
+            <h1 class="sitename">FlexBiz</h1>
+          </a>
+
+          <div class="d-flex align-items-center">
+            <div class="social-links">
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+
+            <form class="search-form ms-4">
+              <input type="text" placeholder="Search..." class="form-control" />
+              <button type="submit" class="btn">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-wrap">
+        <div class="container d-flex justify-content-center position-relative">
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#team">Team</a></li>
+              <li class="dropdown">
+                <a href="#"
+                  ><span>Dropdown</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i
+                ></a>
+                <ul>
+                  <li><a href="#">Dropdown 1</a></li>
+                  <li class="dropdown">
+                    <a href="#"
+                      ><span>Deep Dropdown</span>
+                      <i class="bi bi-chevron-down toggle-dropdown"></i
+                    ></a>
+                    <ul>
+                      <li><a href="#">Deep Dropdown 1</a></li>
+                      <li><a href="#">Deep Dropdown 2</a></li>
+                      <li><a href="#">Deep Dropdown 3</a></li>
+                      <li><a href="#">Deep Dropdown 4</a></li>
+                      <li><a href="#">Deep Dropdown 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Dropdown 2</a></li>
+                  <li><a href="#">Dropdown 3</a></li>
+                  <li><a href="#">Dropdown 4</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="about-hero">
+        <div class="about-overlay"></div>
+        <div class="about-wave"></div>
+
+        <div class="about-content">
+          <h1>SERVICES</h1>
+        </div>
+      </section>
+      <section class="services-section">
+        <div class="services-container">
+          <!-- LEFT -->
+          <div class="services-main">
+            <div class="services-header">
+              <h2>Services We Provide</h2>
+              <span class="header-line"></span>
+            </div>
+
+            <!-- COMMERCIAL -->
+            <div class="service-group">
+              <h3>Commercial Services</h3>
+
+              <div class="service-grid">
+                <div class="service-card">Low Cost Country Sourcing</div>
+                <div class="service-card">Distributionships</div>
+                <div class="service-card">
+                  Penetration into Middle East and Asian Markets
+                </div>
+                <div class="service-card">
+                  Plant Engineering Services & Automation
+                </div>
+                <div class="service-card">
+                  Procurement & Supply Chain Consultancy
+                </div>
+              </div>
+            </div>
+
+            <!-- INDUSTRIAL -->
+            <div class="service-group">
+              <h3>Industrial Services</h3>
+
+              <div class="service-grid">
+                <div class="service-card">Boiler Service</div>
+                <div class="service-card">Bolt Torquing</div>
+                <div class="service-card">Tensioning Service</div>
+                <div class="service-card">Boring Service</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <aside class="services-sidebar">
+            <h4>Industries Served</h4>
+
+            <div class="industry-item">Oil, Gas & Petrochemicals</div>
+            <div class="industry-item">Aerospace & Aviation</div>
+            <div class="industry-item">Chemicals & Lubricants</div>
+            <div class="industry-item">Security & Counter Terrorism</div>
+            <div class="industry-item">Industrial Plants</div>
+            <div class="industry-item">Mining & Drilling</div>
+            <div class="industry-item">Water & Irrigation</div>
+            <div class="industry-item">Low Cost Country Sourcing</div>
+            <div class="industry-item">Lab Equipment</div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <a href="index.html" class="logo d-flex align-items-center mb-3">
+                <span class="sitename">FlexBiz</span>
+              </a>
+              <p class="tagline">
+                Innovating the digital landscape with elegant solutions and
+                timeless design.
+              </p>
+
+              <div class="social-links mt-4">
+                <a href="#" aria-label="Facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" aria-label="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a href="#" aria-label="Twitter"
+                  ><i class="bi bi-twitter-x"></i
+                ></a>
+                <a href="#" aria-label="Dribbble"
+                  ><i class="bi bi-dribbble"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="footer-links-grid">
+              <div class="row">
+                <div class="col-6 col-md-4">
+                  <h5>Company</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                  <h5>Services</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Digital Strategy</a></li>
+                    <li><a href="#">Branding</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                  <h5>Support</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="footer-cta">
+              <h5>Let's Connect</h5>
+              <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="footer-bottom-content">
+                <p class="mb-0">
+                  © <span class="sitename">Myebsite</span>. All rights reserved.
+                </p>
+                <div class="credits">
+                  <!-- All the links in the footer should remain intact. -->
+                  <!-- You can delete the links only if you've purchased the pro version. -->
+                  <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                  <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                  Designed by
+                  <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
