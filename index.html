@@ -23,57 +23,105 @@
 
 <body class="index-page">
 
-  <header id="header" class="header sticky-top">
+    <header id="header" class="header sticky-top">
     <div class="container-fluid container-xl position-relative">
 
+      <!-- TOP ROW -->
       <div class="top-row d-flex align-items-center justify-content-between">
+
+        <!-- LOGO -->
         <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/logo.png" alt="" class="img-fluid" style="width: auto; height: 50px;">
-          <h1 class="sitename">
-          </h1>
+          <img src="assets/img/logo.png" alt="Pearlcon" style="height:50px;">
         </a>
 
+        <!-- SOCIAL + SEARCH -->
         <div class="d-flex align-items-center">
+          <div class="social-links">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
 
           <form class="search-form ms-4">
-            <input type="text" placeholder="Search..." class="form-control">
-            <button type="submit" class="btn"><i class="bi bi-search"></i></button>
+            <input type="text" class="form-control" placeholder="Search...">
+            <button type="submit" class="btn">
+              <i class="bi bi-search"></i>
+            </button>
           </form>
         </div>
       </div>
-
     </div>
 
+    <!-- MAIN NAV -->
     <div class="nav-wrap">
       <div class="container d-flex justify-content-center position-relative">
+
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero" class="active">Home</a></li>
+
+            <li><a href="index.html" class="active">Home</a></li>
+
             <li><a href="about.html">About Us</a></li>
+
+            <!-- SERVICES DROPDOWN -->
             <li class="dropdown">
-              <a href="#"><span>Services</span>
+              <a href="#">
+                <span>Services Offered</span>
                 <i class="bi bi-chevron-down toggle-dropdown"></i>
               </a>
               <ul>
-                <li><a href="electrical-transmission-automation.html">Electrical Transmission & Automation</a></li>
-                <li><a href="industrial-heating-systems.html">Industrial Heating Systems</a></li>
-                <li><a href="industrial-refrigeration-hvacr.html">Industrial Refrigeration & HVAC-R</a></li>
-                <li><a href="industrial-gas-fittings.html">Industrial Gas Fittings</a></li>
-                <li><a href="steam-piping-systems.html">Steam Piping Systems</a></li>
-                <li><a href="industrial-hvac-ductwork.html">HVAC Ductwork & Ventilation</a></li>
+                <li><a href="#">Electrical Installation, Testing & Maintenance</a></li>
+                <li><a href="#">Power Distribution & Automation</a></li>
+                <li><a href="#">Mechanical Installation & Maintenance</a></li>
+                <li><a href="#">Static & Rotating Equipment Services</a></li>
+                <li><a href="#">Industrial HVAC & Refrigeration</a></li>
+                <li><a href="#">Chillers, AHUs & Ventilation Systems</a></li>
+                <li><a href="#">Industrial Heating & Boilers</a></li>
+                <li><a href="#">Steam & Condensate Piping</a></li>
+                <li><a href="#">Industrial Gas Pipework & Certification</a></li>
+                <li><a href="#">Welding, NDT & Pressure Testing</a></li>
+                <li><a href="#">Oil & Gas Plant Maintenance</a></li>
+                <li><a href="#">Shutdown & Emergency Maintenance</a></li>
+                <li><a href="#">Railway Electrical & Mechanical Services</a></li>
+                <li><a href="#">Infrastructure Maintenance Support</a></li>
+                <li><a href="#">Supply of Industrial Materials & Equipment</a></li>
               </ul>
             </li>
-            <li><a href="#portfolio">Sectors</a></li>
+
+            <!-- SECTORS DROPDOWN -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Sectors</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+              <ul>
+                <li><a href="#">Oil & Gas</a></li>
+                <li><a href="#">Petrochemical</a></li>
+                <li><a href="#">Power & Utilities</a></li>
+                <li><a href="#">Industrial Manufacturing</a></li>
+                <li><a href="#">Railways & Transportation</a></li>
+                <li><a href="#">Infrastructure Projects</a></li>
+                <li><a href="#">Commercial & Industrial Facilities</a></li>
+                <li><a href="#">Cold Storage & Logistics</a></li>
+              </ul>
+            </li>
+
             <li><a href="#health">Health, Safety & Compliance</a></li>
+
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+
+            <li><a href="contactus.html">Contact Us</a></li>
+
           </ul>
+
+          <!-- MOBILE TOGGLE -->
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+
       </div>
     </div>
-
   </header>
+
 
   <main class="main">
 
@@ -98,12 +146,13 @@
               </div>
               <div class="content">
                 <h2 class="display-5 fw-bold mb-3">
-                    Engineering Excellence for Power, Process & Industrial Systems
+                    Engineering Excellence for Industrial & Infrastructure Systems
                 </h2>
                 <p class="lead mb-4">
-                  Pearlcon LLC delivers specialist installation, maintenance, and repair solutions across
-                  electrical transmission, mechanical systems, HVAC-R, and process piping — supporting
-                  industrial, utilities, and energy sectors throughout Saudi Arabia.
+                Pearlcon LLC Saudi Arabia is a specialized engineering and industrial services company delivering reliable electrical, mechanical, HVAC, oil & gas, and infrastructure support services across the Kingdom of Saudi Arabia.
+                </p>
+                <p class="lead mb-4">
+                  We provide on-site installation, maintenance, commissioning, and operational support for industrial plants, energy facilities, infrastructure projects, and transportation systems, ensuring safe, efficient, and compliant operations.
                 </p>
                 <div class="d-flex flex-wrap gap-3">
                   <a href="#services" class="btn btn-primary-ghost">
@@ -115,22 +164,7 @@
                     <span>Get a Quote</span>
                   </a>
                 </div>
-                <div class="mini-stats d-flex flex-wrap gap-4 mt-4" data-aos="zoom-in" data-aos-delay="250">
-                  <div class="stat d-flex align-items-center">
-                    <i class="bi bi-lightning-charge me-2"></i>
-                    <span>Engineering Solutions Built for Safety & Reliability</span>
-
-                  </div>
-                  <div class="stat d-flex align-items-center">
-                    <i class="bi bi-shield-check me-2"></i>
-                    <span>Saudi & International Standards Compliant</span>
-                  </div>
-                  <div class="stat d-flex align-items-center">
-                    <i class="bi bi-people me-2"></i>
-                    <span>End-to-End Industrial Lifecycle Services</span>
-
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -138,10 +172,10 @@
           <div class="col-lg-5">
             <div class="media-stack" data-aos="zoom-in" data-aos-delay="200">
               <figure class="media primary shadow-sm">
-                <img src="assets/img/Oil.jpg" class="img-fluid" alt="Hero visual">
+                <img src="assets/img/chemicals.jpg" class="img-fluid" alt="Hero visual">
               </figure>
               <figure class="media secondary shadow-sm">
-                <img src="assets/img/Aero.jpg" class="img-fluid" alt="Supporting visual">
+                <img src="assets/img/irrigation.jpg" class="img-fluid" alt="Supporting visual">
               </figure>
               <div class="floating-badge d-flex align-items-center shadow-sm" data-aos="fade-down" data-aos-delay="300">
                 <i class="bi bi-award me-2"></i>
@@ -159,7 +193,10 @@
     <!-- Featured Services Section -->
     <section id="featured-services" class="featured-services section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+
         <div class="row g-4">
+
+          <!-- CORE VALUES -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item">
               <div class="icon">
@@ -168,46 +205,63 @@
               <h3>Core Values</h3>
 
               <ul>
-                  <li>Safety First</li>
-                  <li>Technical Integrity</li>
-                  <li>Client Centricity</li>
-                  <li>Performance & Reliability</li>
+                <li><strong>Safety First</strong> – Protecting people, sites, and assets</li>
+                <li><strong>Quality & Excellence</strong> – Delivering services to international standards</li>
+                <li><strong>Integrity & Transparency</strong> – Ethical and accountable business practices</li>
+                <li><strong>Reliability & Commitment</strong> – Consistent and dependable service delivery</li>
+                <li><strong>Client Focus</strong> – Practical solutions aligned with client needs</li>
               </ul>
-        
             </div>
-          </div><!-- End Service Item -->
+          </div>
+          <!-- END CORE VALUES -->
 
-          <!-- Card 2 -->
+          <!-- VISION -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item">
               <div class="icon">
                 <i class="bi bi-shield-check"></i>
               </div>
               <h3>Our Vision</h3>
-              <p>To be a trusted engineering partner for industrial and energy infrastructure across the Kingdom and GCC.</p>
-              
+              <p>
+                To become a trusted engineering services partner for industrial and
+                infrastructure projects across the Kingdom of Saudi Arabia.
+                We aim to support Saudi Arabia’s industrial development and Vision 2030
+                goals while building long-term partnerships based on trust,
+                performance, and safety leadership.
+              </p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+          <!-- END VISION -->
 
-          <!-- Card 3 -->
+          <!-- MISSION -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item">
               <div class="icon">
                 <i class="bi bi-graph-up"></i>
               </div>
               <h3>Our Mission</h3>
-              <p>Deliver high-quality solutions that maximise asset performance, improve safety, and support sustainable operations.</p>
-              
+              <p>
+                To deliver high-quality, safe, and reliable engineering services that
+                support the operational efficiency and long-term performance of
+                industrial and infrastructure assets across Saudi Arabia.
+              </p>
+
+              <ul>
+                <li>Providing dependable technical solutions</li>
+                <li>Maintaining the highest safety and quality standards</li>
+                <li>Supporting clients through responsive and professional service</li>
+              </ul>
             </div>
           </div>
-        <!-- End Service Item -->
-
+          <!-- END MISSION -->
 
         </div>
 
       </div>
+    </section>
 
-    </section><!-- /Featured Services Section -->
+
+    <!-- /Featured Services Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -243,7 +297,11 @@
 
               <div class="intro-body">
                 <p class="lead"> 
-                Pearlcon LLC is a Saudi-based industrial engineering and services provider with deep expertise in electrical transmission, automation, HVAC-R, industrial piping, and process systems. We help clients achieve safe, reliable, and compliant operations through tailored solutions and exceptional execution.
+               Pearlcon LLC Saudi Arabia is a Saudi-registered engineering services company focused on field execution and technical support. Operating independently within Saudi Arabia, we support critical industrial assets with experienced site teams, strong safety culture, and dependable service delivery.
+
+                </p>
+                <p> 
+                  <strong>Pearlcon LLC Saudi Arabia</strong> is part of <strong>Pearlcon Business Services Ltd, United Kingdom </strong>, a UK-based procurement, engineering supply, and strategic sourcing company with over 15 years of continuous operation and growth. Pearlcon Business Services specializes in the supply, installation, and commissioning of MRO products, industrial equipment, and engineering solutions across sectors including Rail, Retail, Manufacturing, Oil & Gas, Power & Energy, Water & Wastewater, and Construction.
 
                 </p>
 
@@ -450,40 +508,41 @@
                 
               </div>
               <!-- End Skills Item -->
+               <div class="skill-item">
+                <div class="skill-header">
+                  <h4>Mechanical & Industrial Systems</h4>
+                </div>
+               </div>
 
               <div class="skill-item">
                 <div class="skill-header">
-                  <h4>Industrial Heating Systems</h4>
+                  <h4>Industrial Refrigeration & HVAC</h4>
                 </div>
               </div>
               <!-- End Skills Item -->
 
               <div class="skill-item">
                 <div class="skill-header">
-                  <h4>Industrial Refrigeration & HVAC-R</h4>
+                  <h4>Oil & Gas Plant Support</h4>
                 </div>
               </div>
               <!-- End Skills Item -->
 
               <div class="skill-item">
                 <div class="skill-header">
-                  <h4>Industrial Gas & Steam Systems</h4>
+                  <h4>Steam, Piping & Gas Systems</h4>
                 </div>
               </div>
               <!-- End Skills Item -->
 
               <div class="skill-item">
                 <div class="skill-header">
-                  <h4>HVAC Ductwork & Ventilation</h4>
+                  <h4>Railway & Infrastructure Services</h4>
                 </div>
               </div>
               <!-- End Skills Item -->
 
-              <div class="skill-item">
-                <div class="skill-header">
-                  <h4>Health, Safety & Compliance</h4>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -493,113 +552,107 @@
     <section id="services" class="services section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Check Our Services</p>
+        <p>Our Core Engineering & Industrial Services</p>
       </div>
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5">
+
+          <!-- Electrical -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-card">
-              <div class="service-number">01</div>
-              <div class="service-icon-wrapper">
-                <div class="service-icon">
-                  <img src="assets/img/Oil.jpg" alt=""  class="service_img">
-                </div>
-              </div>
               <div class="service-content">
-               <h4>Electrical Transmission & Automation</h4>
-                <p>Pearlcon Business Services Limited is a UK-based sourcing, supplying, procurement and consultancy company specialising in equipment, materials and OEM spares for the Oil, Gas and Petrochemical sectors</p>
-                
+                <h4>Electrical Transmission & Automation</h4>
+                <p>
+                  Electrical installation, testing and commissioning services
+                  including power distribution systems, protection relays,
+                  control panels and industrial automation. We provide
+                  preventive and corrective maintenance, fault diagnosis and
+                  troubleshooting support for critical operations.
+                </p>
               </div>
             </div>
           </div>
 
+          <!-- Mechanical -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-card featured">
-              <div class="service-number">02</div>
-              <div class="service-icon-wrapper">
-                <div class="service-icon">
-                  <!-- <i class="bi bi-globe"></i> -->
-                  <img src="assets/img/Aero.jpg" alt="" class="service_img">
-                </div>
-              </div>
               <div class="service-content">
-                <h4>Industrial Heating Systems</h4>
-                <p>We support aerospace and aviation clients with specialised sourcing solutions, managing complex procurement requirements while ensuring compliance, traceability and timely delivery.</p>
-                 
+                <h4>Mechanical & Industrial Services</h4>
+                <p>
+                  Mechanical installation and maintenance services covering
+                  static and rotating equipment, industrial piping and
+                  mechanical works. We support shutdowns, turnarounds and
+                  planned maintenance activities across industrial facilities.
+                </p>
               </div>
             </div>
           </div>
 
+          <!-- HVAC -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-card">
-              <div class="service-number">03</div>
-              <div class="service-icon-wrapper">
-                <div class="service-icon">
-                  <img src="assets/img/Chemicals.jpg" alt="" class="service_img">
-                  <!-- <i class="bi bi-phone"></i> -->
-                </div>
-              </div>
               <div class="service-content">
-                <h4>Industrial Refrigeration & HVAC-R</h4>
-                <p>Pearlcon responds to enquiries worldwide through established global vendor relationships, supplying chemicals and lubricants that meet industry and regulatory standards.</p>
-                  
+                <h4>Industrial Refrigeration & HVAC</h4>
+                <p>
+                  Design, installation, testing and commissioning of industrial
+                  and commercial HVAC systems including chillers, AHUs,
+                  ventilation and cooling systems. Comprehensive preventive
+                  and corrective maintenance solutions are provided.
+                </p>
               </div>
             </div>
           </div>
 
+          <!-- Steam & Gas -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-card">
-              <div class="service-number">04</div>
-              <div class="service-icon-wrapper">
-                <div class="service-icon">
-                  <img src="assets/img/cement.jpg" alt="" class="service_img">
-                  <!-- <i class="bi bi-search"></i> -->
-                </div>
-              </div>
               <div class="service-content">
-                <h4>Industrial Gas Fittings</h4>
-                <p>As sourcing and procurement landscapes evolve, Pearlcon supports industrial plants with reliable equipment sourcing and supply continuity solutions.</p>
-                 
+                <h4>Steam, Gas & Piping Systems</h4>
+                <p>
+                  Installation and maintenance of steam and condensate piping
+                  systems, industrial gas pipework and fittings. Services
+                  include pressure testing, inspections, certification,
+                  repairs, modifications and system upgrades.
+                </p>
               </div>
             </div>
           </div>
 
+          <!-- Oil & Gas -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-card">
-              <div class="service-number">05</div>
-              <div class="service-icon-wrapper">
-                <div class="service-icon">
-                  <img src="assets/img/security.jpg" alt="" class="service_img">
-                  <!-- <i class="bi bi-shield-lock"></i> -->
-                </div>
-              </div>
               <div class="service-content">
-                <h4>Steam Piping Systems</h4>
-                <p>Pearlcon provides specialised sourcing and procurement services for security and counter-terrorism equipment supporting critical infrastructure and protection needs.</p>
-                  
+                <h4>Oil & Gas Plant Services</h4>
+                <p>
+                  On-site oil and gas plant support including equipment
+                  inspection, servicing, maintenance, modifications and
+                  upgrades. We assist clients in meeting operational safety,
+                  compliance and performance requirements.
+                </p>
               </div>
             </div>
           </div>
 
+          <!-- Railway -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-card">
-              <div class="service-number">06</div>
-              <div class="service-icon-wrapper">
-                <div class="service-icon">
-                  <img src="assets/img/miningand-drilling.jpg" alt="" class="service_img">
-                  <!-- <i class="bi bi-cloud-arrow-up"></i> -->
-                </div>
-              </div>
               <div class="service-content">
-                <h4>HVAC Ductwork & Ventilation</h4>
-                <p>Pearlcon is a specialist sourcing and procurement partner for mining and drilling operations, delivering heavy-duty equipment and spare parts for demanding environments.</p>
-                
+                <h4>Railway & Infrastructure Services</h4>
+                <p>
+                  Electrical and mechanical support services for railway and
+                  infrastructure projects, including maintenance, asset
+                  support and technical service solutions for reliable and
+                  safe operations.
+                </p>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
+
 
     <section id="features" class="features section light-background">
         <!-- Section Title -->
@@ -632,14 +685,14 @@
 
                 <div class="feature-item" data-aos="zoom-in" data-aos-delay="200">
                   <div class="f-body">
-                    <h4 class="f-title">Local presence with Gulf region experience</h4>
+                    <h4 class="f-title">Saudi-registered engineering services company</h4>
                   </div>
                 </div>
                 <!-- End Feature Item -->
 
                 <div class="feature-item" data-aos="zoom-in" data-aos-delay="250">
                   <div class="f-body">
-                    <h4 class="f-title">Multi-disciplinary engineering capability</h4>
+                    <h4 class="f-title">Experienced technical and site support teams</h4>
                     
                   </div>
                 </div>
@@ -648,7 +701,7 @@
                 <div class="feature-item" data-aos="zoom-in" data-aos-delay="300">
                   
                   <div class="f-body">
-                    <h4 class="f-title">Compliance with Saudi and international standards</h4>
+                    <h4 class="f-title">Strong focus on safety, quality, and compliance</h4>
                     
                   </div>
                 </div>
@@ -657,27 +710,19 @@
                 <div class="feature-item" data-aos="zoom-in" data-aos-delay="350">
                   
                   <div class="f-body">
-                    <h4 class="f-title">Lifecycle services: install → maintain → upgrade</h4>
+                    <h4 class="f-title">Reliable execution for critical industrial assets</h4>
                     
                   </div>
                 </div>
-                <!-- End Feature Item -->
 
                 <div class="feature-item" data-aos="zoom-in" data-aos-delay="400">
                   <div class="f-body">
-                    <h4 class="f-title">Strong safety and quality culture</h4>
+                    <h4 class="f-title">Long-term service and maintenance support</h4>
                     
                   </div>
                 </div>
-                <!-- End Feature Item -->
 
-                <div class="feature-item" data-aos="zoom-in" data-aos-delay="450">
-                  <div class="f-body">
-                    <h4 class="f-title">Dedicated Client Support</h4>
-                    
-                  </div>
-                </div>
-                <!-- End Feature Item -->
+                
               </div>
             </div>
           </div>
@@ -857,205 +902,123 @@
     </section>
     <!-- /Testimonials Section -->
 
-    <!-- <section id="faq" class="faq section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>F.A.Q</h2>
-          <p>Frequently Asked Questions</p>
-        </div>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-              <div class="faq-wrapper">
-                <div class="faq-item faq-active">
-                  <div class="faq-header">
-                    <div class="faq-icon">
-                      <i class="bi bi-question-circle"></i>
-                    </div>
-                    <h4>What services does Pearlcon LLC provide?</h4>
-                    <div class="faq-toggle">
-                      <i class="bi bi-plus"></i>
-                      <i class="bi bi-dash"></i>
-                    </div>
-                  </div>
-                  <div class="faq-content">
-                    <div class="content-inner">
-                        <p>
-                          We provide installation, maintenance, and repair services for electrical transmission,
-                          HVAC-R, industrial piping, gas, and steam systems.
-                        </p>
-                    </div>
-                  </div>
-                </div>
+    <!-- Contact Section -->
+ <section id="contact" class="contact section dark-background">
 
-                <div class="faq-item">
-                  <div class="faq-header">
-                    <div class="faq-icon">
-                      <i class="bi bi-question-circle"></i>
-                    </div>
-                    <h4>Which industries does Pearlcon serve?</h4>
-                    <div class="faq-toggle">
-                      <i class="bi bi-plus"></i>
-                      <i class="bi bi-dash"></i>
-                    </div>
-                  </div>
-                  <div class="faq-content">
-                    <div class="content-inner">
-                      <p>
-                        We support a wide range of industries including Oil & Gas,
-                        Petrochemicals, Aerospace & Aviation, Mining & Drilling,
-                        Industrial Plants, Chemicals & Lubricants, and Security &
-                        Counter-Terrorism.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-header">
-                    <div class="faq-icon">
-                      <i class="bi bi-question-circle"></i>
-                    </div>
-                    <h4>Does Pearlcon supply OEM and spare parts?</h4>
-                    <div class="faq-toggle">
-                      <i class="bi bi-plus"></i>
-                      <i class="bi bi-dash"></i>
-                    </div>
-                  </div>
-                  <div class="faq-content">
-                    <div class="content-inner">
-                      <p>
-                        Yes. Pearlcon specialises in sourcing OEM equipment, spare parts
-                        and consumables through a trusted global vendor network,
-                        ensuring authenticity, traceability and compliance.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-header">
-                    <div class="faq-icon">
-                      <i class="bi bi-question-circle"></i>
-                    </div>
-                    <h4>How does Pearlcon ensure quality and compliance?</h4>
-                    <div class="faq-toggle">
-                      <i class="bi bi-plus"></i>
-                      <i class="bi bi-dash"></i>
-                    </div>
-                  </div>
-                  <div class="faq-content">
-                    <div class="content-inner">
-                      <p>
-                        We follow strict quality control processes, supplier audits and
-                        documentation checks to ensure all materials meet client,
-                        industry and regulatory requirements.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-header">
-                    <div class="faq-icon">
-                      <i class="bi bi-question-circle"></i>
-                    </div>
-                    <h4>How can I request a quotation or consultation?</h4>
-                    <div class="faq-toggle">
-                      <i class="bi bi-plus"></i>
-                      <i class="bi bi-dash"></i>
-                    </div>
-                  </div>
-                  <div class="faq-content">
-                    <div class="content-inner">
-                      <p>
-                        You can contact our team directly through the contact form,
-                        email or phone. Our specialists will review your requirements
-                        and provide a tailored sourcing or procurement solution.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <p>For enquiries, project discussions, or service support</p>
+  </div>
 
-              </div>
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
 
-            </div>
+      <!-- CONTACT INFORMATION -->
+      <div class="col-lg-5">
+
+        <!-- Saudi Office -->
+        <div class="info-item d-flex">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Pearlcon LLC – Saudi Arabia</h3>
+            <p>
+              Building No. 2996, 2nd Floor, Room #6<br>
+              Najd Street, Al Tubayshi Area<br>
+              Dammam 32233, Eastern Province<br>
+              PO Box 8969, Saudi Arabia
+            </p>
           </div>
-
         </div>
-    </section>
-Contact Section -->
-    <section id="contact" class="contact section dark-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Get in touch with our sourcing & procurement specialists</p>
-      </div>
 
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-5">
-            <div class="info-item d-flex">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Head Office</h3>
-                <p>Saudi Arabia</p>
-              </div>
-            </div>
-
-            <div class="info-item d-flex">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p> UK. +44-1234440530 </p>
-                <p> Mb. 0044-7891363776</p>
-              </div>
-            </div>
-
-            <div class="info-item d-flex">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>sales@pearlcon.com</p>
-              </div>
-            </div>
+        <!-- UK Office -->
+        <div class="info-item d-flex">
+          <i class="bi bi-building flex-shrink-0"></i>
+          <div>
+            <h3>Pearlcon Business Services Ltd – United Kingdom</h3>
+            <p>
+              38F, Oakwood Hill Industrial Estate<br>
+              Chigwell Lane, Loughton<br>
+              England IG10 3NY, United Kingdom
+            </p>
           </div>
+        </div>
 
-          <!-- Contact Form -->
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+        <!-- Phone -->
+        <div class="info-item d-flex">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Call Us</h3>
+            <p>
+              Saudi Arabia: <strong>+966 …</strong><br>
+              United Kingdom: <strong>+44 (0) 1234 440 530</strong>
+            </p>
+          </div>
+        </div>
 
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Full Name" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Business Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Enquiry Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Tell us about your sourcing or procurement requirement" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Thank you. Our team will contact you shortly.</div>
-
-                  <button type="submit">Submit Enquiry</button>
-                </div>
-
-              </div>
-
-            </form>
-          </div><!-- End Contact Form -->
-
+        <!-- Email -->
+        <div class="info-item d-flex">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email Us</h3>
+            <p>
+              <a href="mailto:sales@pearlcon.com">sales@pearlcon.com</a><br>
+              <a href="https://www.pearlcon.com" target="_blank">www.pearlcon.com</a>
+            </p>
+          </div>
         </div>
 
       </div>
-    </section>
 
+      <!-- CONTACT FORM -->
+      <div class="col-lg-7">
+        <form action="forms/contact.php" method="post"
+              class="php-email-form"
+              data-aos="fade-up" data-aos-delay="200">
+
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control"
+                     placeholder="Your Full Name" required>
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" name="email" class="form-control"
+                     placeholder="Your Business Email" required>
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" name="subject" class="form-control"
+                     placeholder="Enquiry Subject" required>
+            </div>
+
+            <div class="col-md-12">
+              <textarea name="message" rows="6" class="form-control"
+                        placeholder="Please describe your project, service requirement, or enquiry"
+                        required></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Submitting...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                Thank you for contacting Pearlcon. Our team will respond promptly.
+              </div>
+
+              <button type="submit">Submit Enquiry</button>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+      <!-- END CONTACT FORM -->
+
+    </div>
+  </div>
+
+</section>
+<!-- /Contact Section -->
     <!-- /Contact Section -->
   </main>
 
@@ -1082,52 +1045,7 @@ Contact Section -->
           </div>
         </div>
 
-        <!-- Links -->
-        <div class="col-lg-6">
-          <div class="footer-links-grid">
-            <div class="row">
-
-              <div class="col-6 col-md-4">
-                <h5>Company</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#about">About Us</a></li>
-                  <li><a href="#team">Our Team</a></li>
-                  <li><a href="#services">Industries We Serve</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-
-              <div class="col-6 col-md-4">
-                <h5>Services</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#services">Sourcing & Procurement</a></li>
-                  <li><a href="#services">Supply Chain Management</a></li>
-                  <li><a href="#services">Logistics Support</a></li>
-                  <li><a href="#services">Consulting Services</a></li>
-                </ul>
-              </div>
-
-              <div class="col-6 col-md-4">
-                <h5>Support</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#faq">FAQs</a></li>
-                  <li><a href="#contact">Request a Quote</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="col-lg-2">
-          <div class="footer-cta">
-            <h5>Let’s Talk</h5>
-            <a href="#contact" class="btn btn-outline">Contact Our Team</a>
-          </div>
-        </div>
+       
 
       </div>
     </div>

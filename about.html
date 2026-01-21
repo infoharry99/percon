@@ -409,66 +409,104 @@
 
   <body class="index-page">
     <header id="header" class="header sticky-top">
-      <div class="container-fluid container-xl position-relative">
-        <div class="top-row d-flex align-items-center justify-content-between">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img
-              src="assets/img/logo.png"
-              alt=""
-              class="img-fluid"
-              style="width: auto; height: 50px"
-            />
-            <h1 class="sitename">
-              <img src="/assets/img/logo.png" alt="" />
-            </h1>
-          </a>
+  <div class="container-fluid container-xl position-relative">
 
-          <div class="d-flex align-items-center">
-            <div class="social-links">
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            </div>
+    <!-- TOP ROW -->
+    <div class="top-row d-flex align-items-center justify-content-between">
 
-            <form class="search-form ms-4">
-              <input type="text" placeholder="Search..." class="form-control" />
-              <button type="submit" class="btn">
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
-          </div>
+      <!-- LOGO -->
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="Pearlcon" style="height:50px;">
+      </a>
+
+      <!-- SOCIAL + SEARCH -->
+      <div class="d-flex align-items-center">
+        <div class="social-links">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
         </div>
+
+        <form class="search-form ms-4">
+          <input type="text" class="form-control" placeholder="Search...">
+          <button type="submit" class="btn">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
       </div>
-      <div class="nav-wrap">
-        <div class="container d-flex justify-content-center position-relative">
-          <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li class="dropdown">
-              <a href="#"><span>Services</span>
-                <i class="bi bi-chevron-down toggle-dropdown"></i>
-              </a>
-              <ul>
-                <li><a href="#">Electrical Transmission & Automation</a></li>
-                <li><a href="#">Industrial Heating Systems</a></li>
-                <li><a href="#">Industrial Refrigeration & HVAC-R</a></li>
-                <li><a href="#">Industrial Gas Fittings</a></li>
-                <li><a href="#">Steam Piping Systems</a></li>
-                <li><a href="#">HVAC Ductwork & Ventilation</a></li>
-              </ul>
-            </li>
-            <li><a href="#portfolio">Sectors</a></li>
-            <li><a href="#health">Health, Safety & Compliance</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-        </div>
-      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAV -->
+  <div class="nav-wrap">
+    <div class="container d-flex justify-content-center position-relative">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li><a href="about.html">About Us</a></li>
+
+          <!-- SERVICES DROPDOWN -->
+          <li class="dropdown">
+            <a href="#">
+              <span>Services Offered</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="#">Electrical Installation, Testing & Maintenance</a></li>
+              <li><a href="#">Power Distribution & Automation</a></li>
+              <li><a href="#">Mechanical Installation & Maintenance</a></li>
+              <li><a href="#">Static & Rotating Equipment Services</a></li>
+              <li><a href="#">Industrial HVAC & Refrigeration</a></li>
+              <li><a href="#">Chillers, AHUs & Ventilation Systems</a></li>
+              <li><a href="#">Industrial Heating & Boilers</a></li>
+              <li><a href="#">Steam & Condensate Piping</a></li>
+              <li><a href="#">Industrial Gas Pipework & Certification</a></li>
+              <li><a href="#">Welding, NDT & Pressure Testing</a></li>
+              <li><a href="#">Oil & Gas Plant Maintenance</a></li>
+              <li><a href="#">Shutdown & Emergency Maintenance</a></li>
+              <li><a href="#">Railway Electrical & Mechanical Services</a></li>
+              <li><a href="#">Infrastructure Maintenance Support</a></li>
+              <li><a href="#">Supply of Industrial Materials & Equipment</a></li>
+            </ul>
+          </li>
+
+          <!-- SECTORS DROPDOWN -->
+          <li class="dropdown">
+            <a href="#">
+              <span>Sectors</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="#">Oil & Gas</a></li>
+              <li><a href="#">Petrochemical</a></li>
+              <li><a href="#">Power & Utilities</a></li>
+              <li><a href="#">Industrial Manufacturing</a></li>
+              <li><a href="#">Railways & Transportation</a></li>
+              <li><a href="#">Infrastructure Projects</a></li>
+              <li><a href="#">Commercial & Industrial Facilities</a></li>
+              <li><a href="#">Cold Storage & Logistics</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#health">Health, Safety & Compliance</a></li>
+
+          <li><a href="#projects">Projects</a></li>
+
+          <li><a href="contactus.html">Contact Us</a></li>
+
+        </ul>
+
+        <!-- MOBILE TOGGLE -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </div>
     </header>
+
 
     <main class="main">
       <section class="about-hero">
@@ -476,7 +514,7 @@
         <div class="about-wave"></div>
 
         <div class="about-content">
-          <h1>ABOUT US</h1>
+          <h1>About Pearlcon LLC Saudi Arabia</h1>
         </div>
       </section>
 
@@ -485,25 +523,18 @@
           <!-- LEFT -->
           <div class="content">
             <p>
-              Pearlcon Business Services is a UK based supply, sourcing &
-              consulting company, with expertise in Sourcing, Procurement,
-              Supply Chain Management and Logistics.
+              Pearlcon LLC Saudi Arabia was established to support the Kingdom’s growing industrial, energy, and infrastructure sectors through professional engineering and technical services. Our operations are focused on on-site execution, ensuring equipment reliability, operational continuity, and strict safety compliance.
+
             </p>
 
-            <h4>Core activities include :</h4>
+            <h4>Our Mission</h4>
+            <p>To deliver high-quality, safe, and reliable engineering services that support the operational efficiency and long-term performance of industrial and infrastructure assets across Saudi Arabia.</p>
+            <h4>We are committed to:</h4>
             <ol>
-              <li>Supply of equipments, materials and OEM spare parts.</li>
-              <li>Sourcing and supply services from overseas market.</li>
+              <li>Providing dependable technical solutions</li>
+              <li>Maintaining the highest safety and quality standards</li>
               <li>
-                Consultancy support for procurement & supply chain services.
-              </li>
-              <li>
-                Help suppliers/manufacturers to penetrate in Middle East and
-                China Markets.
-              </li>
-              <li>
-                Support Middle Eastern clients to find JV partners from
-                UK/Europe & US.
+                Supporting clients through responsive and professional service
               </li>
             </ol>
 
