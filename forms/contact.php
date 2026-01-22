@@ -21,8 +21,8 @@
   }
 
   // Email settings
-  $to = "infoharry99@gmil.com";   // Receiver email
-  $from = "no-reply@pearlcon.com"; // Should exist on server
+  $to = "sales@pearlcon.com";   // Receiver email
+  $from = "no-reply@pearlcon.com"; 
   $email_subject = "New Website Enquiry: $subject";
 
   // Email body
