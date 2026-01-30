@@ -509,91 +509,40 @@
       <section class="one-stop-section">
         <div class="container2">
           <!-- LEFT -->
-          <div class="content">
-            <p>
-              Pearlcon LLC Saudi Arabia was established to support the Kingdom’s growing industrial, energy, and infrastructure sectors through professional engineering and technical services. Our operations are focused on on-site execution, ensuring equipment reliability, operational continuity, and strict safety compliance.
+          <div class="content" id="tabContent">
+  <p>
+    Pearlcon LLC Saudi Arabia was established to support the Kingdom’s growing
+    industrial, energy, and infrastructure sectors through professional
+    engineering and technical services.
+  </p>
 
-            </p>
+  <h4>Our Mission</h4>
+  <p>
+    To deliver high-quality, safe, and reliable engineering services that
+    support operational efficiency.
+  </p>
+</div>
 
-            <h4>Our Mission</h4>
-            <p>To deliver high-quality, safe, and reliable engineering services that support the operational efficiency and long-term performance of industrial and infrastructure assets across Saudi Arabia.</p>
-            <h4>We are committed to:</h4>
-            <ol>
-              <li>Providing dependable technical solutions</li>
-              <li>Maintaining the highest safety and quality standards</li>
-              <li>
-                Supporting clients through responsive and professional service
-              </li>
-            </ol>
-
-            <p>
-              Pearlcon has a proven track record of sourcing and supplying
-              engineering equipment and spare parts to Oil, Gas, Petrochemical,
-              Mining, Medical and Security industries.
-            </p>
-
-            <!-- RANDOM IMAGE -->
-            <!-- <div class="one-stop-image">
-              <img src="assets/img/onestopshop.jpg" alt="One Stop Shop" />
-            </div> -->
-
-            <!-- DIAGRAM -->
-            <p>
-              One-Stop-Solution is designed to support your entire Procurement
-              Chain from start to finish. Pearlcon will be your single point of
-              contact for the scope we define and agree together. We will manage
-              the process with all its complexities and optimize the entire
-              procurement value chain. As the supply chain increases in depth
-              and complexity, it is necessary to understand how decisions in one
-              area can impact the total Supply Chain performance. Pearlcon
-              understands that the Supply Chain is key for the industries today,
-              and works with its client to reach the excellence. Pearlcon
-              focuses on Supply Chain strategy and performance improvement,
-              applying experience across a wide range of industries.
-            </p>
-          </div>
 
           <!-- RIGHT -->
-          <div class="industries">
-            <div class="industry-card">
-              <i class="bi bi-droplet"></i>Electrical Transmission & Automation
-            </div>
-            <div class="industry-card">
-              <i class="bi bi-airplane"></i> Mechanical & Industrial Systems
-            </div>
-            <div class="industry-card">
-              <i class="bi bi-flask"></i> Industrial Refrigeration & HVAC
-            </div>
-            <div class="industry-card">
-              <i class="bi bi-shield-check"></i> Oil & Gas Plant Support
-            </div>
-            <div class="industry-card">
-              <i class="bi bi-gear"></i> Steam, Piping & Gas Systems
-            </div>
-            <div class="industry-card">
-              <i class="bi bi-minecart-loaded"></i> Railway & Infrastructure Services
-            </div>
-            <section class="downloads-section">
-              <div class="downloads-card">
-                <h3 class="downloads-title">DOWNLOADS</h3>
+         <div class="industries">
+  <div class="industry-card active" onclick="changeTab('electrical')">
+    <i class="bi bi-droplet"></i> Electrical Transmission & Automation
+  </div>
 
-                <ul class="downloads-list">
-                  <li>
-                    <span class="dot"></span>
-                    <a href="#">Pearlcon Brochure</a>
-                  </li>
-                  <li>
-                    <span class="dot"></span>
-                    <a href="#">Products Portfolio O and G</a>
-                  </li>
-                  <li>
-                    <span class="dot"></span>
-                    <a href="#">An ISO Certified Company</a>
-                  </li>
-                </ul>
-              </div>
-            </section>
-          </div>
+  <div class="industry-card" onclick="changeTab('mechanical')">
+    <i class="bi bi-airplane"></i> Mechanical & Industrial Systems
+  </div>
+
+  <div class="industry-card" onclick="changeTab('hvac')">
+    <i class="bi bi-flask"></i> Industrial Refrigeration & HVAC
+  </div>
+
+  <div class="industry-card" onclick="changeTab('oilgas')">
+    <i class="bi bi-shield-check"></i> Oil & Gas Plant Support
+  </div>
+</div>
+
         </div>
       </section>
     </main>
@@ -719,5 +668,69 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script>
+  const tabData = {
+    electrical: `
+      <p>
+        Pearlcon provides advanced electrical transmission and automation
+        solutions ensuring efficiency, safety, and reliability across
+        industrial operations.
+      </p>
+      <h4>Key Services</h4>
+      <ul>
+        <li>Power distribution systems</li>
+        <li>Automation & control panels</li>
+        <li>Electrical maintenance</li>
+      </ul>
+    `,
+
+    mechanical: `
+      <p>
+        Our mechanical and industrial systems services support heavy industries
+        with robust engineering solutions.
+      </p>
+      <ul>
+        <li>Equipment installation</li>
+        <li>Preventive maintenance</li>
+        <li>Industrial retrofitting</li>
+      </ul>
+    `,
+
+    hvac: `
+      <p>
+        Pearlcon delivers industrial refrigeration and HVAC solutions for
+        mission-critical environments.
+      </p>
+      <ul>
+        <li>Chiller systems</li>
+        <li>Cold storage solutions</li>
+        <li>Industrial HVAC maintenance</li>
+      </ul>
+    `,
+
+    oilgas: `
+      <p>
+        We support Oil & Gas plants with reliable on-site technical and
+        operational services.
+      </p>
+      <ul>
+        <li>Plant maintenance</li>
+        <li>Pipeline systems</li>
+        <li>Safety compliance</li>
+      </ul>
+    `,
+  };
+
+  function changeTab(tab) {
+    document.getElementById("tabContent").innerHTML = tabData[tab];
+
+    document.querySelectorAll(".industry-card").forEach((el) =>
+      el.classList.remove("active")
+    );
+
+    event.currentTarget.classList.add("active");
+  }
+</script>
+
   </body>
 </html>
