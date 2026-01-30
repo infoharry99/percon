@@ -22,83 +22,91 @@
 
 <body class="index-page">
     <header id="header" class="header sticky-top">
-        <div class="container-fluid container-xl position-relative">
+    <div class="container-fluid container-xl position-relative">
 
-        <div class="top-row d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo.png" alt="" class="img-fluid" style="width: auto; height: 50px;">
-            <h1 class="sitename">
-            </h1>
-            </a>
+      <!-- TOP ROW -->
+      <div class="top-row d-flex align-items-center justify-content-between">
 
-            <div class="d-flex align-items-center">
+        <!-- LOGO -->
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="Pearlcon" style="height:50px;">
+        </a>
 
-            <form class="search-form ms-4">
-                <input type="text" placeholder="Search..." class="form-control">
-                <button type="submit" class="btn"><i class="bi bi-search"></i></button>
-            </form>
-            </div>
-        </div>
+        <!-- SOCIAL + SEARCH -->
+        <!-- <div class="d-flex align-items-center">
+          <div class="social-links">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
 
-        </div>
+          <form class="search-form ms-4">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button type="submit" class="btn">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div> -->
+      </div>
+    </div>
 
-        <div class="nav-wrap">
-        <div class="container d-flex justify-content-center position-relative">
-            
-          <nav id="navmenu" class="navmenu">
+    <!-- MAIN NAV -->
+    <div class="nav-wrap">
+      <div class="container d-flex justify-content-center position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+              <a href="#">
+                <span>Services Offered</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
               <ul>
-
-                <li><a href="index.html" >Home</a></li>
-
-                <li><a href="about.html">About Us</a></li>
-                <li class="dropdown" >
-                  <a href="#">
-                    <span>Services Offered</span>
-                    <i class="bi bi-chevron-down toggle-dropdown"></i>
-                  </a>
-                  <ul>
-                    <li><a href="electrical-transmission-automation.html">Electrical Installation, Testing & Maintenance</a></li>
-            
-                    <li><a href="industrial-hvac-ductwork.html">Industrial HVAC & Refrigeration</a></li>
-                    <li><a href="industrial-heating-systems.html">Industrial Heating & Boilers</a></li>
-                    <li><a href="industrial-gas-fittings.html">Industrial Gas Pipework & Certification</a></li>
-                    <li><a href="industrial-gas-fittings.html">Oil & Gas Plant Maintenance</a></li>
-                  </ul>
-                </li>
-
-                <!-- SECTORS DROPDOWN -->
-                <li class="dropdown">
-                  <a href="#">
-                    <span>Sectors</span>
-                    <i class="bi bi-chevron-down toggle-dropdown"></i>
-                  </a>
-                  <ul>
-                    <li><a href="#">Oil & Gas</a></li>
-                    <li><a href="#">Petrochemical</a></li>
-                    <li><a href="#">Power & Utilities</a></li>
-                    <li><a href="#">Industrial Manufacturing</a></li>
-                    <li><a href="#">Railways & Transportation</a></li>
-                    <li><a href="#">Infrastructure Projects</a></li>
-                    <li><a href="#">Commercial & Industrial Facilities</a></li>
-                    <li><a href="#">Cold Storage & Logistics</a></li>
-                  </ul>
-                </li>
-
-                <li><a href="index.html#health">Health, Safety & Compliance</a></li>
-
-                <li><a href="index.html#projects">Projects</a></li>
-
-                <li><a href="contactus.html" class="active">Contact Us</a></li>
-
+                <li><a href="electrical-transmission-automation.html">Electrical Installation, Testing & Maintenance</a></li>
+        
+                <li><a href="industrial-hvac-ductwork.html">Industrial HVAC & Refrigeration</a></li>
+                <li><a href="industrial-heating-systems.html">Industrial Heating & Boilers</a></li>
+                <li><a href="industrial-gas-fittings.html">Industrial Gas Pipework & Certification</a></li>
+                <li><a href="industrial-gas-fittings.html">Oil & Gas Plant Maintenance</a></li>
               </ul>
+            </li>
 
-              <!-- MOBILE TOGGLE -->
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-          </nav>
-        </div>
-        </div>
+            <!-- SECTORS DROPDOWN -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Sectors</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+              <ul>
+                <li><a href="OilandGas.html">Oil & Gas</a></li>
+                <li><a href="Petrochemical.html">Petrochemical</a></li>
+                <li><a href="PowerandUtilities.html">Power & Utilities</a></li>
+                <li><a href="IndustrialManufacturing.html">Industrial Manufacturing</a></li>
+                <li><a href="RailwayTransportation.html">Railways & Transportation</a></li>
+                <li><a href="InfrastructureProjects.html">Infrastructure Projects</a></li>
+                <li><a href="CommercialIndustrialFacilities.html">Commercial & Industrial Facilities</a></li>
+                <li><a href="ColdStorageLogistics.html">Cold Storage & Logistics</a></li>
+              </ul>
+            </li>
 
-    </header>
+            <li><a href="index.html#health">Health, Safety & Compliance</a></li>
+
+            <li><a href="index.html#projects">Projects</a></li>
+
+            <li><a href="contactus.html">Contact Us</a></li>
+
+          </ul>
+
+          <!-- MOBILE TOGGLE -->
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+    </div>
+  </header>
 
 
     
@@ -166,53 +174,99 @@
 </main>
 
 
-     <footer id="footer" class="footer position-relative">
+    <footer id="footer" class="footer position-relative">
 
+  <div class="container">
+    <div class="row gy-5">
+
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <a href="index.html" class="logo d-flex align-items-center mb-3">
+            <span class="sitename">Pearlcon</span>
+          </a>
+
+          <p class="footer-text">
+            Saudi-based industrial engineering and services company delivering compliant,
+            reliable solutions for energy and industrial infrastructure.
+          </p>
+
+          <div class="social-links mt-4">
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Saudi Office -->
+      <div class="col-lg-2 col-md-6">
+        <div class="info-item">
+          <i class="bi bi-geo-alt"></i>
+          <h4>Saudi Arabia</h4>
+          <p>
+            Building No. 2996, 2nd Floor, Room #6<br>
+            Najd Street, Al Tubayshi Area<br>
+            Dammam 32233<br>
+            PO Box 8969
+          </p>
+        </div>
+      </div>
+
+      <!-- UK Office -->
+      <div class="col-lg-2 col-md-6">
+        <div class="info-item">
+          <i class="bi bi-building"></i>
+          <h4>United Kingdom</h4>
+          <p>
+            38F, Oakwood Hill Industrial Estate<br>
+            Chigwell Lane, Loughton<br>
+            IG10 3NY, UK
+          </p>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-lg-2 col-md-6">
+        <div class="info-item">
+          <i class="bi bi-telephone"></i>
+          <h4>Call Us</h4>
+          <p>
+            Saudi Arabia: <strong>+966 …</strong><br>
+            United Kingdom: <strong>+44 (0) 1234 440 530</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-lg-2 col-md-6">
+        <div class="info-item">
+          <i class="bi bi-envelope"></i>
+          <h4>Email</h4>
+          <p>
+            <a href="mailto:sales@pearlcon.com">sales@pearlcon.com</a><br>
+            <a href="https://www.pearlcon.com" target="_blank">www.pearlcon.com</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom mt-5">
     <div class="container">
-      <div class="row gy-5">
-
-        <!-- Brand -->
-        <div class="col-lg-4">
-          <div class="footer-brand">
-            <a href="index.html" class="logo d-flex align-items-center mb-3">
-              <span class="sitename">Pearlcon</span>
-            </a>
-            <p class="tagline">
-                Saudi-based industrial engineering and services company delivering compliant,
-                reliable solutions for energy and industrial infrastructure.
-            </p>
-
-            <div class="social-links mt-4">
-              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-            </div>
-          </div>
-        </div>
-
-       
-
-      </div>
-    </div>
-
-    <!-- Bottom -->
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="footer-bottom-content">
-              <p class="mb-0">
-                © <span class="sitename">Pearlcon Business Services</span>. All rights reserved.
-              </p>
-              <div class="credits">
-                Designed & Managed by <a href="#">Pearlcon Business Services</a>
-              </div>
-            </div>
-          </div>
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0">
+          © 2026 <strong>Pearlcon Business Services</strong>. All rights reserved.
+        </p>
+        <div class="credits">
+          Designed & Managed by <a href="#">Pearlcon Business Services</a>
         </div>
       </div>
     </div>
+  </div>
 
-  </footer>
+</footer>
 
 
     <!-- Scroll Top -->

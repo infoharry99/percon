@@ -1048,7 +1048,7 @@ section,
 }
 
 .hero .hero-card .content p {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 25%); */
   margin: 0;
 }
 
@@ -1096,7 +1096,7 @@ section,
 
 .hero .hero-card .mini-stats .stat {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 25%); */
 }
 
 .hero .hero-card .mini-stats .stat i {
@@ -1274,7 +1274,7 @@ section,
 }
 
 .featured-services .service-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 25%); */
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -1343,7 +1343,7 @@ section,
   --card-radius: 16px;
   --soft-border: color-mix(in srgb, var(--default-color), transparent 88%);
   --muted-text: color-mix(in srgb, var(--default-color), transparent 28%);
-  --muted-strong: color-mix(in srgb, var(--default-color), transparent 18%);
+  --muted-strong: color-mix(in srgb, var(--default-color), transparent 0%);
   --accent-soft: color-mix(in srgb, var(--accent-color), transparent 88%);
   --accent-softer: color-mix(in srgb, var(--accent-color), transparent 92%);
 }
@@ -2146,7 +2146,7 @@ section,
 }
 
 .services .service-card .service-content p {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 25%); */
   margin-bottom: 20px;
   line-height: 1.6;
   font-size: 15px;
@@ -3882,7 +3882,7 @@ section,
 
 .faq .section-header .lead {
   font-size: 1.1rem;
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 25%); */
   line-height: 1.6;
 }
 
@@ -4064,7 +4064,7 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  background-image: url("../img/bg/dotted-world-1.webp");
+  /* background-image: url("../img/bg/dotted-world-1.webp"); */
   background-position: left center;
   background-repeat: no-repeat;
   position: relative;
@@ -4244,7 +4244,7 @@ section,
 }
 
 .service-details .service-main-content p {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 25%); */
   margin-bottom: 20px;
 }
 
@@ -4337,7 +4337,7 @@ section,
 }
 
 .service-details .service-tabs .tab-content p {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 25%); */
 }
 
 .service-details .service-tabs .tab-content .feature-item {
@@ -4405,7 +4405,7 @@ section,
 }
 
 .service-details .service-testimonial .testimonial-card .client-info p {
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 25%); */
   margin-bottom: 10px;
   font-size: 14px;
 }
@@ -4952,4 +4952,57 @@ section,
 .cta-btn:hover {
   background: #b92a07;
   transform: translateY(-3px);
+}
+
+.footer {
+  /* background: #0b1d2d; */
+  color: #000;
+  padding-top: 60px;
+}
+
+.footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .sitename {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footer-text {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.info-item i {
+  font-size: 22px;
+  color: #dd3209;
+  margin-bottom: 10px;
+}
+
+.info-item h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.info-item p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.social-links a {
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 20px 0;
+  font-size: 14px;
 }
